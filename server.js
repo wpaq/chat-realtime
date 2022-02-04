@@ -27,4 +27,6 @@ io.on('connection', socket => {
     })
 })
 
-server.listen(3000);
+server.listen(3000, () => {
+    console.log(`Project running in: http://localhost:3000`)
+});
